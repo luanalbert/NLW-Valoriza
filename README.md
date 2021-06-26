@@ -13,7 +13,10 @@
 - [TypeScrypt](https://www.typescriptlang.org/)
 - [TypeORM](https://typeorm.io/)
 - [Express](https://expressjs.com/)
-- [SQLite](https://www.sqlite.org/index.html)
+- [Uuid](https://www.npmjs.com/package/uuid)
+- [JWT](https://www.npmjs.com/package/jsonwebtoken)
+
+
 
 ## :boom: Como Executar
 
@@ -46,4 +49,7 @@
 - **☐ CRUD de Compliments** _em implementação_
 - **☐ CRUD de Users** _em implementação_
 
-<sup>Projeto desenvolvido com a tutoria de [Dany Leão](https://github.com/danileao), da [Rocketseat](rocketseat.com.br).</sup>
+### 😄 Valeu a Galera da [Rocketseat](https://github.com/Rocketseat) em especial a  [Dani](https://github.com/danileao) #TrilhaNode
+
+
+
