@@ -9,6 +9,7 @@ import { ListUserSendComplimentsController } from "./src/controllers/ListUserSen
 import { ListUserReceiveComplimentsController } from "./src/controllers/ListUserReceiverComplimentsController";
 import { ListTagsController } from "./src/controllers/ListTagsController";
 import { ListUsersController } from "./src/controllers/ListUserController";
+import { DeleteTagController } from "./src/controllers/DeleteTagController";
 
 const router = Router();
 
@@ -21,6 +22,9 @@ const listUserReceiveComplimentsController = new ListUserReceiveComplimentsContr
 
 const listTagsController = new ListTagsController();
 const listUsersController = new ListUsersController();
+
+//delete
+const deleteTagController = new DeleteTagController();
 
 router.post(
     "/tags",
@@ -56,7 +60,12 @@ router.get(
     "/users",
     ensureAuthenticated,
     listUsersController.handle
-    )
+);
+
+router.delete(
+    "/tags/:id", 
+    deleteTagController.delete
+);
 
 
 export { router };

@@ -3,7 +3,9 @@ import {
     PrimaryColumn, 
     Column, 
     CreateDateColumn, 
-    UpdateDateColumn
+    UpdateDateColumn,
+    OneToMany,
+    JoinColumn
 } from "typeorm";
 
 import { Expose } from "class-transformer"

@@ -1,4 +1,5 @@
-import {MigrationInterface, QueryRunner, Table, TableForeignKey} from "typeorm";
+
+import {IsNull, MigrationInterface, QueryRunner, Table, TableForeignKey} from "typeorm";
 
 export class CreateCompliments1624554800946 implements MigrationInterface {
 
@@ -16,14 +17,18 @@ export class CreateCompliments1624554800946 implements MigrationInterface {
                     {
                         name: "user_sender",
                         type:"uuid",
+                        isNullable:true
                     },
                     {
                         name: "user_receiver",
-                        type:"uuid"
+                        type:"uuid",
+                        isNullable:true
                     },
                     {
                         name: "tag_id",
-                        type: "uuid"
+                        type: "uuid",
+                        isNullable:true
+                        
                     },
                     {
                         name: "message",
@@ -57,9 +62,10 @@ export class CreateCompliments1624554800946 implements MigrationInterface {
                         referencedTableName:"tags",
                         referencedColumnNames: ["id"],
                         columnNames:["tag_id"],
-                        onDelete: "SET NULL",
+                        onDelete: "CASCADE",
                         onUpdate: "SET NULL"
-                    }
+
+                    },
                 ]
             })
         )
