@@ -63,7 +63,9 @@ router.get(
 );
 
 router.delete(
-    "/tags/:id", 
+    "/tags/:id",
+    ensureAuthenticated,
+    ensureAdmin, 
     deleteTagController.delete
 );
 

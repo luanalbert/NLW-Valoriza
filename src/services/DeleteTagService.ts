@@ -16,10 +16,9 @@ class DeleteTagService {
         if (!idValidation) {
             throw new Error("Tag does not exist")
         }
-        const tagRemove = tagsRepositories.delete(id)
-
+        const tagRemove =  tagsRepositories.delete(id)
+        
         return tagRemove;
-
     }
 }
 
