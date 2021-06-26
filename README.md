@@ -1,9 +1,9 @@
 # NLW - Valoriza
 
-<h1 align="center"> Um Elogio nunca é demais! </h1>
 <h2 align="center">
     <img width="60%" alt="NLW - Valoriza" src="https://user-images.githubusercontent.com/24235241/123501804-732e3f00-d615-11eb-9e53-5dda97677c69.png" height="100%" />
 </h2>
+<h1 align="center"> Um Elogio nunca é demais! </h1>
 
 **NLW 6 - Together** - [Rocketseat](https://rocketseat.com.br/).
 
